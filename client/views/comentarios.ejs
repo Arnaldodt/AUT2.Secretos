@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/recursos/style/style.css">
+</head>
+<body>
+    <main>
+        <form method="post" action="/CreaComentarios/<%=id_sec%>">
+            <ul>
+                <li>
+                    Secreto:<%=Secreto%>
+                </li>
+                <li>
+                    <label for="comentario">Comentario:</label>
+                </li>
+                <li>
+                    <input type="text" name="comentario" id="comentario" placeholder="Ingrese comentario">
+                </li>
+                <li class="derecha">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+        <%if (comentarios === 'S') {%>
+            <article>
+                <%for (var x in mensajes) {%>
+                    <%=mensajes[x].comentario%><br>
+                <% } %>
+            </article>
+        <% } %>
+    </main>
+    <a href="/Secretos">Volver</a>
+</body>
+</html>

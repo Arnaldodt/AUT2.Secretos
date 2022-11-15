@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 400px;
+    margin: 0 auto;
+    border: 3px solid #000;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+li{
+    width: 50%;
+     padding: 10px 0;
+}
+li.ancho{
+    width: 100%;
+   
+}
+li.derecha{
+    text-align: right;
+   
+}
+input[type=text], select, textarea{
+    width: 100%;
+}
+button[type=submit]{
+    background-color: blue;
+    color: #FFf;
+    width: 80px;
+    height: 30px;
+}
+
+
+
+
+
